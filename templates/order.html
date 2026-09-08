@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкор: учет заказов</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="page-header__title">Анкор: учет заказов</h1>
+        <nav class="main-nav">
+            <a class="main-nav__link" href="/">Заказы</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="order-form-block">
+            <h2 class="order-form-block__title">Новый заказ</h2>
+            <form class="order-form" action="/order" method="post" onsubmit="return validateForm()">
+                <label class="order-form__label" for="fname">Покупатель</label>
+                <input class="order-form__input" type="text" id="fname" name="name">
+                <label class="order-form__label" for="famount">Сумма позиции</label>
+                <input class="order-form__input" type="text" id="famount" name="amount">
+                <label class="order-form__label" for="fqty">Количество</label>
+                <input class="order-form__input" type="text" id="fqty" name="qty" value="1">
+                <button class="order-form__button" type="submit">Добавить</button>
+            </form>
+        </section>
+        <section class="order-list-block">
+            <h2 class="order-list-block__title">Заказы</h2>
+            <ul class="order-list">
+                <li class="order-list__item">Заявки появятся здесь после добавления</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <p class="page-footer__text">ООО «Анкор», оптовая торговля</p>
+    </footer>
+    <script src="/static/app.js"></script>
+</body>
+</html>
