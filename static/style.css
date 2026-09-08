@@ -1,0 +1,38 @@
+.page-header {
+    background-color: #003399;
+    color: #ffffff;
+}
+
+.page-header__title {
+    margin: 0;
+}
+
+.main-nav__link {
+    color: #ffffff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-block__title {
+    color: #003399;
+}
+
+.order-form__input {
+    display: block;
+}
+
+.order-form__button {
+    background-color: #003399;
+    color: #ffffff;
+}
+
+.order-list__item {
+    list-style: none;
+}
+
+.page-footer__text {
+    color: #666666;
+}
