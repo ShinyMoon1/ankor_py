@@ -16,6 +16,7 @@
         <section class="order-form-block">
             <h2 class="order-form-block__title">Новый заказ</h2>
             <form class="order-form" action="/order" method="post" onsubmit="return validateForm()">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                 <label class="order-form__label" for="fname">Покупатель</label>
                 <input class="order-form__input" type="text" id="fname" name="name">
                 <label class="order-form__label" for="famount">Сумма позиции</label>
